@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>PointX Readme EN</title>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-2'>
+<style type='text/css'>
+a { color:#003D71; text-decoration:none; }
+a:hover { color:#027AC6; text-decoration:underline; }
+.small {
+	font-weight: bold;
+	font-size: 10px;
+}
+.quote {
+	color : #000;
+	padding : 2px;
+	margin : 0 20px;
+	border : 1px solid #516D7F;
+}
+.button {
+	font-family:Tahoma,Arial,Verdana,Sans-Serif;
+	font-size:11px;
+	color:#000000; 	
+	background-color:#E5E5E8;
+	border:#7F98A7 1px solid;
+	margin-top:2px;
+}
+.textbox {
+	font-family:Verdana,Tahoma,Arial,Sans-Serif;
+	font-size:11px;
+	color:#000; 
+	background-color:#FFFFFF;
+	border:1px #7F98A7 solid;
+}
+td { font-family:Verdana,Tahoma,Arial,Sans-Serif; font-size:11px; }
+.tbl-border { background-color:#FFFFFF; }
+.a2b {
+	font-size:11px;
+	color:#000;
+	padding:4px;
+	-moz-border-radius:0px 0px 20px 20px;
+	-webkit-border-radius:0px 0px 20px 20px;
+	border-radius:0px 0px 20px 20px;
+}
+.tbl1 {
+	font-size:11px;
+	color:#000;
+	padding:4px;
+	-moz-border-radius:0px 0px 20px 20px;
+	-webkit-border-radius:0px 0px 20px 20px;
+	border-radius:0px 0px 20px 20px;
+	border-left: 1px solid #3f3f3f;
+	border-right: 1px solid #3f3f3f;
+	border-bottom: 1px solid #3f3f3f;
+}
+.tbl2 {
+	font-size:11px;
+	color:#fff;
+	text-align: center;
+	background-color:#E1E1E1;
+	padding:4px;
+	-moz-border-radius:20px 20px 0px 0px;
+	-webkit-border-radius:20px 20px 0px 0px;
+	border-radius:20px 20px 0px 0px;
+	background-image: -moz-linear-gradient(top, #444444, #212121);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#444444), to(#212121));
+	background-image: -o-linear-gradient(top, #444444, #212121);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#212121');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#212121')";
+	background-image: linear-gradient(top, #444444, #212121);
+}
+.tbl3 {	font-size:11px; color:#000; background-color:#F1F1F1; padding:4px; }
+</style>
+</head>
+<body bgcolor='#ffffff'>
+
+<br><br><br><br>
+
+<table align='center' cellpadding='0' cellspacing='0' width='700' class='tbl-border'>
+<tr><td colspan='2' style='text-align:center;'><span style='font-size:72px;'><img src="sylvia.png" alt="Sylvia" title="Sylvia 1.0.0" /></td></tr></table>
+
+<br><br>
+
+<table align='center' cellpadding='0' cellspacing='1' width='700' class='tbl-border'>
+<tr><td colspan='5' class='tbl2'><strong>Information about the original Infusion</strong></td></tr>
+<tr>
+<td align='center' class='tbl1' width='25%'><br>Name: Sylvia<br /><br /></td>
+<td align='center' class='tbl1' width='25%'><br>Copyright &copy; <a href="http://www.on-deck.eu" target="_blank">Yodix</a><br /><br /></td>
+<td align='center' class='tbl1' width='25%'><br>Version: 1.0.2<br /><br /></td>
+<td align='center' class='tbl1' width='25%'><br>License: <a href="AGPL.txt">AGPL</a><br><br></td>
+</tr>
+
+<tr><td colspan='4' class='tbl2'><strong>Description</strong></td></tr>
+
+<tr><td colspan='4' class='tbl1'><br />
+Warnings System for PHP-Fusion. There are two types of counting warnings - number or percent.
+Moreover depending on the number of warnings can be set different blockades.
+By default, there are three - Forum, Shoutbox and Comments (without modifying files).
+<br><br></td></td></tr>
+
+<tr><td colspan='4' class='tbl2'><strong>PointX Connection</strong></td></tr>
+
+<tr><td colspan='4' class='tbl1'><br />
+Warnings System can be connected to infusion "PointX". This allows you to subtract points for added warning.
+The required version is 2.0.2 or later.
+<br><br></td></td></tr>
+
+<tr><td colspan='4' class='tbl2'><strong>Installation</strong></td></tr>
+
+<tr><td colspan='4' class='tbl1'><br />
+1. Upload all files from the directory <strong>files</strong> on the server.<br />
+2. Log in to your site as an administrator with permission to Infusions.<br />
+3. Go to the Admin Panel -> System Admin -> Infusions<br />
+4. Select from the drop-down list "Sylvia" and click Infuse.<br />
+5. Open <strong>includes/header_includes.php</strong>, find:<br />
+<textarea style='width:350px;'>//Add your custom include files for the header here</textarea><br />
+or (if PointX is installed)<br />
+<textarea style='width:350px;'>require_once INFUSIONS."pointx/pointx_core.php";</textarea><br />
+Under this add:<br />
+<textarea style='width:350px;'>require_once INFUSIONS."sylvia/sylvia_core.php";</textarea><br />
+6. Save and upload file on server.<br />
+7. Installation Complete.<br />
+<br /></td></td></tr>
+
+<tr><td colspan='4' class='tbl2'><strong>Update</strong></td></tr>
+
+<tr><td colspan='4' class='tbl1'><br />
+<div style='text-align:center;color:#0000FF;font-weight:bold;'>Manual Update</div>
+1. Upload all files from the directory <strong>files</strong> on the server.<br />
+2. Refresh Website.<br />
+3. Update Completed.
+<div style='text-align:center;color:#009900;font-weight:bold;'>Automatic update</div>
+1. Go to the Infusion management panel.<br />
+2. Click "Update".<br />
+3. Update Completed.
+<p><span style='color:#FF0000'>Automatic Update may not work correctly on some servers!</span></p>
+<br><br></td></td></tr>
+
+<tr><td colspan='4' class='tbl2'><strong>Change Log</strong></td></tr>
+
+<tr><td colspan='4' class='tbl1'><br />
+<strong>Version 1.0.2</strong><br />
+<em>*Added Message from Moderator</em><br />
+<em>*Added ability to change the appearance of the list of warnings</em><br />
+<em>*Added new options to auto-update system</em><br />
+<strong>Version 1.0.1</strong><br />
+<em>*Added Defined Warnings.</em><br />
+<em>*Added the ability to send private messages when adding a warning.</em><br />
+<em>*Added ability to define a moderating group.</em><br />
+<em>*Fixed display information on the forum for not logged users.</em><br />
+<em>*Not logged users have access to the list of warning the user, depending on the setting "Hide user profiles from public:"</em>
+<br><br></td></td></tr>
+
+<tr><td colspan='4' class='tbl2'><strong>Help</strong></td></tr>
+<tr><td colspan='4' class='tbl1'><br />
+Problems with the original infusion, please notify on the author website <b>
+<a target="_blank" href="http://www.on-deck.eu">
+www.on-deck.eu</a></b> or <b>
+<a target="_blank" href="http://www.php-fusion.pl/">
+Polish Official Support site of PHP-Fusion</a></b>.<br /><br /></td>
+</tr>
+
+<tr><td colspan='4' class='tbl2'><strong>Copyright</strong></td></tr>
+
+<tr><td colspan='4' class='tbl1'><br />
+<small><b>NOTE!</b><br />
+Package with plug can not be distributed without the README.<br><br></td>
+</table><br><br><br><br>
+
+</body>
+</html> 
